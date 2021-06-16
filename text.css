@@ -1,0 +1,44 @@
+
+body {
+    font-family: Tahoma, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;   
+}
+
+.FormEvents {
+    border: 2px grey solid;
+    border-width: 50px;
+}
+
+.FormEvents, .Events-item-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Events-item, .Events-item-item-items {
+    margin-top: 10px;
+}
+
+/*
+    .FormEvents- Whole Container
+        .Events-items
+        .Events-items-items
+            .Events-item-item-items
+*/
+
+
+/*
+
+Form Container
+.Events-item-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Events-item-item-items {
+    margin-top: 10px;
+}*/
