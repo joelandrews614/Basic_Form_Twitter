@@ -21,6 +21,10 @@ body {
     margin-top: 10px;
 }
 
+.hide {
+    display: none;
+}
+
 /*
     .FormEvents- Whole Container
         .Events-items

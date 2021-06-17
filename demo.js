@@ -3,17 +3,19 @@
 
 var form_event = document.querySelector("#Events-item-form");
 var user = document.querySelector("#user");
-var tweet = document.querySelector("#comment");
 
+var tweet = document.querySelector("#comment");
 var ulTweets = document.querySelector("#tweets-container");
 
 
+//  Tweet Creation:
 form_event.addEventListener("submit", (e) => {
 
     e.preventDefault(); 
     
     var listTweets = document.createElement("li");
-    listTweets.innerHTML = `${user.value} Tweeted: ${tweet.value}`;
+    listTweets.classList.add("listItem");
+    listTweets.innerHTML = `<strong>${user.value}</strong> Tweeted: ${tweet.value}`;
     
     if(user.value != "" && tweet.value != ""){
         ulTweets.appendChild(listTweets);
@@ -21,3 +23,11 @@ form_event.addEventListener("submit", (e) => {
     user.value = "";
     tweet.value = "";
 });
+
+//  TweetDeletion:
+ulTweets.addEventListener("click", (e) => {
+    if(e.target == "li"){
+        e.target.remove();   
+       }
+});
+
