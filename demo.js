@@ -26,8 +26,6 @@ form_event.addEventListener("submit", (e) => {
 
 //  TweetDeletion:
 ulTweets.addEventListener("click", (e) => {
-    if(e.target == "li"){
-        e.target.remove();   
-       }
+        e.target.remove();  
 });
 
